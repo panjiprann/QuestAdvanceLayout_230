@@ -48,7 +48,7 @@ fun AktivitasPertama(modifier: Modifier) {
             )
         ) {
             Row {
-                val gambar = painterResource(id = R.drawable.ilam)
+                val gambar = painterResource(id = R.drawable.logo_umy)
                 Image(
                     painter = gambar,
                     contentDescription = null,
@@ -71,6 +71,14 @@ fun AktivitasPertama(modifier: Modifier) {
                         color = Color.Yellow,
                         modifier = Modifier.padding(top = 15.dp)
 
+                    )
+                    Text(
+                        text = stringResource(id = R.string.nomor).trim(),
+                        fontSize = 20.sp,
+                        color = Color.White,
+                        fontWeight = FontWeight.Normal,
+                        modifier = Modifier
+                            .padding(bottom = 15.dp)
                     )
                 }
             }
