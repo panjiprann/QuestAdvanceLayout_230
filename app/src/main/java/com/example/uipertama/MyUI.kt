@@ -133,7 +133,8 @@ fun AktivitasPertama(modifier: Modifier) {
                     .fillMaxWidth()
                     .padding(horizontal = 15.dp, vertical = 7.dp),
                 colors = CardDefaults.cardColors(
-                    containerColor = Color.Blue
+                    containerColor = Color(0xFF000080)
+
                 ),
                 elevation = CardDefaults.cardElevation(defaultElevation = 2.dp)
             ){Row {
