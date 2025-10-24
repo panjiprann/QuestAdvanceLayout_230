@@ -44,7 +44,7 @@ fun AktivitasPertama(modifier: Modifier) {
                     .fillMaxWidth(fraction = 1f)
                     .padding(all = 12.dp),
                 colors = CardDefaults.cardColors(
-                    containerColor = Color.DarkGray
+                    containerColor = Color.Black
                 )
             ) {
                 Row {
@@ -68,7 +68,7 @@ fun AktivitasPertama(modifier: Modifier) {
                         Text(
                             text = stringResource(id = R.string.alamat),
                             fontSize = 20.sp,
-                            color = Color.Yellow,
+                            color = Color.White,
                             modifier = Modifier.padding(top = 15.dp)
 
                         )
@@ -88,7 +88,7 @@ fun AktivitasPertama(modifier: Modifier) {
                     .fillMaxWidth()
                     .padding(horizontal = 15.dp, vertical = 7.dp),
                 colors = CardDefaults.cardColors(
-                    containerColor = Color(0xFFFFD600)
+                    containerColor = Color.DarkGray
                 ),
                 elevation = CardDefaults.cardElevation(defaultElevation = 2.dp)
             ) { Row {
@@ -133,7 +133,7 @@ fun AktivitasPertama(modifier: Modifier) {
                     .fillMaxWidth()
                     .padding(horizontal = 15.dp, vertical = 7.dp),
                 colors = CardDefaults.cardColors(
-                    containerColor = Color(0xFF388E3C)
+                    containerColor = Color.Blue
                 ),
                 elevation = CardDefaults.cardElevation(defaultElevation = 2.dp)
             ){Row {
