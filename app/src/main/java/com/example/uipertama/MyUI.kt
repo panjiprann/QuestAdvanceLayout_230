@@ -38,16 +38,105 @@ fun AktivitasPertama(modifier: Modifier) {
                 fontSize = 22.sp
             )
 
-        Spacer(modifier = Modifier.height(25.dp))
-        Card(
-            modifier = Modifier
-                .fillMaxWidth(fraction = 1f)
-                .padding(all = 12.dp),
-            colors = CardDefaults.cardColors(
-                containerColor = Color.DarkGray
-            )
-        ) {
-            Row {
+            Spacer(modifier = Modifier.height(25.dp))
+            Card(
+                modifier = Modifier
+                    .fillMaxWidth(fraction = 1f)
+                    .padding(all = 12.dp),
+                colors = CardDefaults.cardColors(
+                    containerColor = Color.DarkGray
+                )
+            ) {
+                Row {
+                    val gambar = painterResource(id = R.drawable.logo_umy)
+                    Image(
+                        painter = gambar,
+                        contentDescription = null,
+                        modifier = Modifier
+                            .size(100.dp)
+                            .padding(all = 5.dp)
+                    )
+                    Spacer(modifier = Modifier.width(30.dp))
+                    Column {
+                        Text(
+                            text = stringResource(id = R.string.nama),
+                            fontSize = 30.sp,
+                            fontFamily = FontFamily.Cursive,
+                            color = Color.White,
+                            modifier = Modifier.padding(top = 15.dp)
+                        )
+                        Text(
+                            text = stringResource(id = R.string.alamat),
+                            fontSize = 20.sp,
+                            color = Color.Yellow,
+                            modifier = Modifier.padding(top = 15.dp)
+
+                        )
+                        Text(
+                            text = stringResource(id = R.string.nomor).trim(),
+                            fontSize = 20.sp,
+                            color = Color.White,
+                            fontWeight = FontWeight.Normal,
+                            modifier = Modifier
+                                .padding(bottom = 15.dp)
+                        )
+                    }
+                }
+            }
+            Card(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(horizontal = 15.dp, vertical = 7.dp),
+                colors = CardDefaults.cardColors(
+                    containerColor = Color(0xFFFFD600)
+                ),
+                elevation = CardDefaults.cardElevation(defaultElevation = 2.dp)
+            ) { Row {
+                    val gambar = painterResource(id = R.drawable.logo_umy)
+                    Image(
+                        painter = gambar,
+                        contentDescription = null,
+                        modifier = Modifier
+                            .size(100.dp)
+                            .padding(all = 5.dp)
+                    )
+                Spacer(modifier = Modifier.width(30.dp))
+                Column {
+                    Text(
+                        text = stringResource(id = R.string.nama2),
+                        fontSize = 30.sp,
+                        fontFamily = FontFamily.SansSerif,
+                        color = Color.White,
+                        modifier = Modifier.padding(top = 15.dp)
+                    )
+                    Text(
+                        text = stringResource(id = R.string.alamat2),
+                        fontSize = 20.sp,
+                        color = Color.White,
+                        modifier = Modifier
+                            .padding(top = 5.dp)
+                            .padding(bottom = 15.dp)
+                    )
+                    Text(
+                        text = stringResource(id = R.string.nomor2).trim(),
+                        fontSize = 20.sp,
+                        color = Color.White,
+                        fontWeight = FontWeight.Normal,
+                        modifier = Modifier
+                            .padding(bottom = 15.dp)
+                    )
+                }
+            }
+            }
+            Card (
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(horizontal = 15.dp, vertical = 7.dp),
+                colors = CardDefaults.cardColors(
+                    containerColor = Color(0xFF388E3C)
+                ),
+                elevation = CardDefaults.cardElevation(defaultElevation = 2.dp)
+            ){Row {
                 val gambar = painterResource(id = R.drawable.logo_umy)
                 Image(
                     painter = gambar,
@@ -59,21 +148,22 @@ fun AktivitasPertama(modifier: Modifier) {
                 Spacer(modifier = Modifier.width(30.dp))
                 Column {
                     Text(
-                        text = stringResource(id = R.string.nama),
+                        text = stringResource(id = R.string.nama3),
                         fontSize = 30.sp,
-                        fontFamily = FontFamily.Cursive,
+                        fontFamily = FontFamily.SansSerif,
                         color = Color.White,
                         modifier = Modifier.padding(top = 15.dp)
                     )
                     Text(
-                        text = stringResource(id = R.string.alamat),
+                        text = stringResource(id = R.string.alamat3),
                         fontSize = 20.sp,
-                        color = Color.Yellow,
-                        modifier = Modifier.padding(top = 15.dp)
-
+                        color = Color.White,
+                        modifier = Modifier
+                            .padding(top = 5.dp)
+                            .padding(bottom = 15.dp)
                     )
                     Text(
-                        text = stringResource(id = R.string.nomor).trim(),
+                        text = stringResource(id = R.string.nomor3).trim(),
                         fontSize = 20.sp,
                         color = Color.White,
                         fontWeight = FontWeight.Normal,
@@ -82,17 +172,15 @@ fun AktivitasPertama(modifier: Modifier) {
                     )
                 }
             }
-        }
-        Box(
-            modifier = Modifier
-                .fillMaxSize()
-        ) {
-            Text(
-                text = stringResource(id = R.string.copy),
-                modifier = Modifier
-                    .align(Alignment.BottomCenter)
-                    .padding(bottom = 50.dp)
-
+            }
+            Box(
+                modifier = Modifier.fillMaxSize()
+            ){
+                Text(
+                    text = stringResource(id = R.string.copy),
+                    modifier = Modifier
+                        .align (Alignment.BottomCenter)
+                        .padding(bottom = 50.dp)
                 )
             }
         }
