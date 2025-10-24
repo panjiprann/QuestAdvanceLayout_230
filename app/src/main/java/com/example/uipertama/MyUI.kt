@@ -17,21 +17,27 @@ import com.example.uipertama.R
 
 @Composable
 fun AktivitasPertama(modifier: Modifier) {
-    Column(
+    Column (
         modifier = Modifier
-            .padding(top = 100.dp)
+            .padding(top = 50.dp)
             .fillMaxSize(),
-        horizontalAlignment = Alignment.CenterHorizontally
+        horizontalAlignment = Alignment.CenterHorizontally,
+        verticalArrangement = Arrangement.SpaceBetween
     ) {
-        Text(
-            text = stringResource(id = R.string.prodi),
-            fontSize = 35.sp,
-            fontWeight = FontWeight.Bold
+        Column(
+            horizontalAlignment = Alignment.CenterHorizontally
         )
-        Text(
-            text = stringResource(id = R.string.univ),
-            fontSize = 22.sp
-        )
+        {
+            Text(
+                text = stringResource(id = R.string.prodi),
+                fontSize = 35.sp,
+                fontWeight = FontWeight.Bold
+            )
+            Text(
+                text = stringResource(id = R.string.univ),
+                fontSize = 22.sp
+            )
+
         Spacer(modifier = Modifier.height(25.dp))
         Card(
             modifier = Modifier
@@ -78,7 +84,9 @@ fun AktivitasPertama(modifier: Modifier) {
                 modifier = Modifier
                     .align(Alignment.BottomCenter)
                     .padding(bottom = 50.dp)
-            )
+
+                )
+            }
         }
     }
 }
